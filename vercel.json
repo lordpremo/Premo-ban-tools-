@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/wallpaper.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/search", "dest": "api/wallpaper.py" },
+    { "src": "/", "dest": "api/wallpaper.py" }
+  ]
+}
